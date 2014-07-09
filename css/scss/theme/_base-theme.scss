@@ -3,21 +3,96 @@
 
 /* ==========================================================================
     Base Theme -- Version: 0.4.0 - Compiled: #{timestamp()}
-   ========================================================================== */
+    ========================================================================== */
 
-body {
-  background: $site-background;
-}
+    body {
+      background: url(/images/bg.png) center top repeat;
+      background-attachment: fixed;
+    }
 
-a.logo {
-  color: inherit;
-  &:hover {
-    border-bottom: none;
-    color: inherit;
-  }
-}
+    .banner {
+      background: $color-white;
 
-footer.container {
-	@include margin($margin, auto);
-  text-align: center;
-}
+      @include bp(bp-large) {
+        @include padding(1em);
+      }
+
+      a.logo {
+        color: $color-secondary-green;
+        line-height: .75;
+        @include bp(bp-small) {
+          width: 100%;
+          text-align: center;
+        }
+
+        &:hover {
+          border-bottom: none;
+          color: inherit;
+        }
+
+        .light {
+          @include font-size(45);
+          font-weight: 100;
+          letter-spacing: .09em;
+        }
+      }
+    }
+
+    footer {
+      @include padding(1em, 0);
+      @include rgba($color-black, .05);
+      @include box-shadow(inset 0 2em 2em -2em rgba($color-black, .15));
+
+      .row  {
+        vertical-align: middle;
+      }
+
+      a {
+        color: $text;
+        font-weight: 200;
+      }
+
+      .social {
+        @include bp(bp-large) {
+          text-align: right;
+        }
+      }
+
+      .fa {
+        color: $color-light-grey;
+        @include transition(color, .2s, ease);
+      }
+
+      .fa-facebook-square:hover {
+        color: #3b5998;
+      }
+
+      .fa-envelope-square:hover {
+        color: $color-primary-red;
+      }
+
+      @include bp(bp-medium) {
+        text-align: center;
+      }
+    }
+
+    .anchor {
+      @include margin(1em, 0, 0);
+      @include padding(.75em, 0);
+      @include rgba(#333, .9);
+      color: $color-white;
+
+      .third {
+        text-align: center;
+      }
+
+      a.cta {
+        @include box-shadow(inset 0 0 0 2px $color-light-grey);
+        color: $color-light-grey;
+
+        &:hover {
+          @include box-shadow(inset 0 0 0 2px $color-white);
+          color: $color-white;
+        }
+      }
+    }

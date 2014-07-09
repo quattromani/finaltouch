@@ -1,0 +1,25 @@
+- name: <i class="fa fa-home"></i>
+  url: "/"
+
+- name: "Services"
+  url: "/services"
+  active: "services"
+  child_links:
+    - name: "Painting"
+      url: "/painting"
+      active: "services"
+    - name: "Hardwood Flooring"
+      url: "/hardwood-flooring"
+      active: "services"
+
+- name: "About Us"
+  url: "/about-us"
+  active: "about-us"
+
+- name: "Gallery"
+  url: "/gallery"
+  active: "gallery"
+
+- name: "Contact Us"
+  url: "/contact-us"
+  active: "contact-us"

@@ -3,21 +3,150 @@
 
 /* ==========================================================================
     Nav Theme -- Version: 0.4.0 - Compiled: #{timestamp()}
-   ========================================================================== */
+    ========================================================================== */
 
-nav {
-  background: $color-primary-red;
-  color: $color-white;
-  .container {
-  	@include padding;
-  }
-  li {
-  	@include padding($padding);
-  	&.active {
-      background: darken($color-primary-red, 5%);
+    nav {
+      position: relative;
+      background: $color-primary-blue;
+      z-index: 9999;
+
+      .container {
+        display: table;
+        width: 100%;
+      }
+
+      ul {
+        display: table-row;
+        width: 100%;
+
+        li {
+          position: relative;
+          display: table-cell;
+          @include padding;
+
+          @include bp(bp-large) {
+            &:hover ul {
+              position: absolute;
+              display: block;
+              left: 0;
+
+              li {
+                display: block;
+                min-width: 10.5em;
+                @include padding;
+                border-bottom: 1px solid rgba($color-primary-blue, .75);
+
+                &.js-last {
+                  border: none;
+                }
+
+                a {
+                  display: block;
+                  width: 100%;
+                  @include padding(.25em, .75em);
+                  background: rgba($color-primary-blue, .9);
+                  color: $color-white;
+
+                  &:hover {
+                    background: $color-secondary-blue;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover {
+            background: $color-secondary-blue;
+          }
+
+          a {
+            display: block;
+            @include padding(.25em, .75em);
+            font-weight: 200;
+            vertical-align: middle;
+            color: $color-white;
+
+            &:hover {
+              color: $color-white;
+            }
+          }
+
+          &.active {
+            background: $color-secondary-blue;
+            @include bp(bp-large) {
+              &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 1.75em;
+                left: 50%;
+                width: 0;
+                height: 0;
+                margin-left: -.75em;
+                border-color: $color-secondary-blue transparent transparent transparent;
+                border-style: solid;
+                border-width: .75em;
+                z-index: 99999;
+              }
+            }
+          }
+
+          @include bp(bp-medium) {
+            display: block;
+            width: 100%;
+
+            &:hover ul {
+              display: none;
+            }
+
+            ul.hidden {
+              display: block;
+
+              li {
+                padding-left: 1em;
+              }
+            }
+          }
+        }
+
+        @include bp(bp-medium) {
+          position: static;
+          display: none;
+        }
+      }
+
+      .show-menu {
+        display: none;
+        @include padding($padding / 2, 0);
+        color: $color-white;
+        @include bp(bp-medium) {
+          display:block;
+        }
+      }
+
+      input[type=checkbox]{
+        display: none;
+      }
+
+      input[type=checkbox]:checked ~ .navigation {
+        display: block;
+        background: $color-primary-blue;
+
+        & li {
+          border-top: 1px solid lighten($color-secondary-blue, 5%);
+          background: darken($color-primary-blue, 5%);
+
+          &:first-child {
+            border: none;
+          }
+        }
+
+        & li li {
+          background: $color-secondary-blue;
+        }
+
+        & > li.js-last {
+          margin-bottom: .5em;
+        }
+      }
     }
-  	&:hover {
-  		background: $color-secondary-red;
-  	}
-  }
-}
