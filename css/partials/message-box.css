@@ -1,0 +1,76 @@
+/* ==========================================================================
+    Message Boxes -- Version: 0.2.1 - Compiled: timestamp()
+   ========================================================================== */
+.message {
+  position: relative;
+  display: inline-block;
+  padding: 1em;
+  line-height: 1;
+}
+
+.message-loading, .message-valid, .message-warning {
+  display: flex;
+  align-items: center;
+  background: whitesmoke;
+  font-weight: 700;
+}
+.message-loading:before, .message-valid:before, .message-warning:before {
+  display: flex;
+  align-items: center;
+  min-width: 3em;
+  font-family: "GLGlyphs", Arial, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: .25em 1em;
+}
+
+.message-loading {
+  color: #5b5b5b;
+}
+.message-loading:before {
+  background: #8e8e8e;
+  content: "\75";
+}
+
+.message-valid {
+  color: #b2f2ac;
+}
+.message-valid:before {
+  background: white;
+  content: "\43";
+}
+
+.message-warning {
+  color: #ef272d;
+}
+.message-warning:before {
+  background: #f68689;
+  content: "\33";
+}
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+.info-box {
+  border-left: 0.3em solid #0099ed;
+  background: #edf9ff;
+  color: #0099ed;
+}
+
+.error-box {
+  border-left: 0.3em solid #ef272d;
+  background: #fde5e6;
+  color: #ef272d;
+}
+
+.valid-box {
+  border-left: 0.3em solid #b2f2ac;
+  background: #7fd976;
+  color: #b2f2ac;
+}
