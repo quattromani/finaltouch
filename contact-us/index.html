@@ -9,3 +9,46 @@ class: contact-us
     <p class="lede"></p>
 
     <hr>
+
+    <div class="row">
+      <div class="three-fourths">
+        <form action="/" method="post" novalidate>
+            <fieldset>
+              <h3>Add Some Color</h3>
+              <h5>Request an Estimate</h5>
+              <div class="formitem">
+                <label class="required" for="name">Name</label>
+                <input type="text" id="name" name="name" pattern="[a-zA-Z]+" autocomplete="name" tabindex="1" required>
+              </div>
+
+              <div class="formitem">
+                <label class="required" for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" tabindex="2" required>
+              </div>
+
+              <div class="formitem">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="phone" tabindex="3" required>
+              </div>
+
+              <div class="formitem">
+                <label for="textarea">Message:</label>
+                <textarea id="textarea" tabindex="4"></textarea>
+              </div>
+
+              <div id="fillit">
+                If you see this, leave this form field blank.
+                <input id="improve" type="text" name="confirm" value="">
+              </div>
+
+              <div class="formitem">
+                <button class="btn btn-primary" type="submit" name="submit" value="submit">
+                  <span>Submit</span>
+                </button>
+
+                <a class="tel btn btn-primary" href="tel:3038757843">Call Us Directly</a>
+              </div>
+            </fieldset>
+          </form>
+      </div>
+    </div>
