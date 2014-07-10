@@ -1033,7 +1033,7 @@
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  border: 1px solid #dfe1e9;
+  border: 1px solid #bbbebf;
   background: whitesmoke;
 }
 .box h1, .box h2, .box h3, .box h4, .box h5, .box h6 {
@@ -1054,7 +1054,7 @@
   padding-right: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
-  border: 1px solid #5b5b5b;
+  border: 1px solid #3e3f40;
 }
 
 .bordered-dotted {
@@ -1062,13 +1062,13 @@
   padding-right: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
-  border: 1px dotted #5b5b5b;
+  border: 1px dotted #3e3f40;
 }
 
 .bordered-left,
 .bordered-left-dark {
   padding-left: 2%;
-  border-left: 1px dotted #5b5b5b;
+  border-left: 1px dotted #3e3f40;
 }
 
 .bordered-left-dark {
@@ -1078,7 +1078,7 @@
 .bordered-right,
 .bordered-right-dark {
   padding-right: 2%;
-  border-right: 1px dotted #5b5b5b;
+  border-right: 1px dotted #3e3f40;
 }
 
 .bordered-right-dark {

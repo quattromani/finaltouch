@@ -25,26 +25,26 @@
 }
 
 .message-loading {
-  color: #5b5b5b;
+  color: #3e3f40;
 }
 .message-loading:before {
-  background: #8e8e8e;
+  background: #707274;
   content: "\75";
 }
 
 .message-valid {
-  color: #b2f2ac;
+  color: #286c20;
 }
 .message-valid:before {
-  background: white;
+  background: #45bb37;
   content: "\43";
 }
 
 .message-warning {
-  color: #ef272d;
+  color: #ea3629;
 }
 .message-warning:before {
-  background: #f68689;
+  background: #f38d86;
   content: "\33";
 }
 
@@ -64,13 +64,13 @@
 }
 
 .error-box {
-  border-left: 0.3em solid #ef272d;
-  background: #fde5e6;
-  color: #ef272d;
+  border-left: 0.3em solid #ea3629;
+  background: #fce4e3;
+  color: #ea3629;
 }
 
 .valid-box {
-  border-left: 0.3em solid #b2f2ac;
+  border-left: 0.3em solid #286c20;
   background: #7fd976;
-  color: #b2f2ac;
+  color: #286c20;
 }

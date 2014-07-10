@@ -23,14 +23,14 @@ progress {
   *display: inline;
   width: 100%;
   height: .5em;
-  background: #dfe1e9;
+  background: #bbbebf;
 }
 .progress-bar-element .progress-bar span {
   position: relative;
   display: block;
   width: attr(value);
   height: .5em;
-  background-color: #ef272d;
+  background-color: #ea3629;
   text-indent: -9999px;
 }
 .progress-bar-element .progress-bar span:after {
@@ -39,7 +39,7 @@ progress {
   width: .25em;
   height: 100%;
   right: 0;
-  background: white;
+  background: #fafeff;
   -webkit-animation: pulsate 1s ease-out infinite;
   -moz-animation: pulsate 1s ease-out infinite;
   animation: pulsate 1s ease-out infinite;

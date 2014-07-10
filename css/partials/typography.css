@@ -93,7 +93,7 @@ a {
   font-style: normal;
   font-weight: normal;
   font-weight: 700;
-  color: #ef272d;
+  color: #ea3629;
   text-decoration: none;
   cursor: pointer;
   transition: .2s;
@@ -259,8 +259,8 @@ blockquote {
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
-  border-left: 3px solid #5b5b5b;
-  color: #5b5b5b;
+  border-left: 3px solid #3e3f40;
+  color: #3e3f40;
   font-style: italic;
   padding-left: 1em;
 }
@@ -270,7 +270,7 @@ q {
 }
 
 abbr {
-  border-bottom: 1px dotted #5b5b5b;
+  border-bottom: 1px dotted #3e3f40;
   cursor: help;
 }
 
@@ -355,5 +355,5 @@ samp {
 .division {
   position: relative;
   left: -.1em;
-  color: #757575;
+  color: #57595a;
 }

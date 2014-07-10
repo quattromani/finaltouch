@@ -2,7 +2,7 @@
     Colors & Gradients -- Version: 0.4.3 - Compiled: timestamp()
    ========================================================================== */
 .color-white {
-  background: white;
+  background: #fafeff;
 }
 
 .color-black {
@@ -10,15 +10,15 @@
 }
 
 .color-grey {
-  background: #5b5b5b;
+  background: #3e3f40;
 }
 
 .color-light-grey {
-  background: #dfe1e9;
+  background: #bbbebf;
 }
 
 .color-primary-red {
-  background: #ef272d;
+  background: #ea3629;
 }
 
 .color-primary-green {
@@ -30,7 +30,7 @@
 }
 
 .color-primary-yellow {
-  background: #fae843;
+  background: #f99202;
 }
 
 .color-secondary-red {
@@ -38,7 +38,7 @@
 }
 
 .color-secondary-green {
-  background: #b2f2ac;
+  background: #286c20;
 }
 
 .color-secondary-blue {
@@ -58,7 +58,7 @@
 }
 
 .color-link {
-  background: #ef272d;
+  background: #ea3629;
 }
 
 .color-error {
@@ -70,27 +70,27 @@
 }
 
 .color-success {
-  background: #b2f2ac;
+  background: #286c20;
 }
 
 .link {
-  color: #ef272d;
+  color: #ea3629;
 }
 
 .text-grey {
-  color: #5b5b5b;
+  color: #3e3f40;
 }
 
 .text-light-grey {
-  color: #dfe1e9;
+  color: #bbbebf;
 }
 
 .text-link {
-  color: #ef272d;
+  color: #ea3629;
 }
 
 .text-white {
-  color: white;
+  color: #fafeff;
 }
 
 .text-info {
@@ -99,7 +99,7 @@
 
 .text-muted,
 .muted {
-  color: #5b5b5b;
+  color: #3e3f40;
 }
 
 .text-warning,
@@ -114,7 +114,7 @@
 }
 
 .text-success {
-  color: #b2f2ac;
+  color: #286c20;
 }
 
 .ie9 .gradient {

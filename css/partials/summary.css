@@ -6,7 +6,7 @@ details {
   margin-right: 0;
   margin-bottom: 1em;
   margin-left: 0;
-  background: #eeeff3;
+  background: #c8cbcb;
 }
 details p {
   padding-top: 1em;
@@ -23,9 +23,9 @@ details summary {
   padding-right: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
-  background: #5b5b5b;
+  background: #3e3f40;
   outline: none;
-  color: white;
+  color: #fafeff;
 }
 details summary::-webkit-details-marker {
   display: none;
