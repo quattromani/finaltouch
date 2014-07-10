@@ -25,13 +25,20 @@
           text-align: center;
         }
 
+        .h2 {
+          border-right: 1px solid $color-light-grey;
+          margin-right: .25em;
+          padding-right: .25em;
+        }
+
         &:hover {
           border-bottom: none;
           color: inherit;
         }
 
         .light {
-          @include font-size(45);
+          @include font-size(36);
+          @include font-family($heading-font-alt);
           font-weight: 100;
           letter-spacing: .09em;
         }
