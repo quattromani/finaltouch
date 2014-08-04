@@ -34,7 +34,7 @@
                 display: block;
                 min-width: 10.5em;
                 @include padding;
-                border-bottom: 1px solid rgba($color-primary-blue, .75);
+                border-bottom: 1px solid rgba($color-primary-red, .75);
 
                 &.js-last {
                   border: none;
@@ -44,11 +44,11 @@
                   display: block;
                   width: 100%;
                   @include padding(.25em, .75em);
-                  background: rgba($color-primary-blue, .9);
+                  background: rgba($color-primary-red, .9);
                   color: $color-white;
 
                   &:hover {
-                    background: $color-secondary-blue;
+                    background: $color-primary-red;
                   }
                 }
               }
@@ -56,7 +56,7 @@
           }
 
           &:hover {
-            background: $color-secondary-blue;
+            background: $color-primary-red;
           }
 
           a {
@@ -72,7 +72,7 @@
           }
 
           &.active {
-            background: $color-secondary-blue;
+            background: $color-primary-red;
             @include bp(bp-large) {
               &:before {
                 content: '';
@@ -83,7 +83,7 @@
                 width: 0;
                 height: 0;
                 margin-left: -.75em;
-                border-color: $color-secondary-blue transparent transparent transparent;
+                border-color: $color-primary-red transparent transparent transparent;
                 border-style: solid;
                 border-width: .75em;
                 z-index: 99999;
@@ -130,11 +130,11 @@
 
       input[type=checkbox]:checked ~ .navigation {
         display: block;
-        background: $color-primary-blue;
+        background: $color-primary-red;
 
         & li {
-          border-top: 1px solid lighten($color-secondary-blue, 5%);
-          background: darken($color-primary-blue, 5%);
+          border-top: 1px solid lighten($color-primary-red, 5%);
+          background: darken($color-primary-red, 5%);
 
           &:first-child {
             border: none;
@@ -142,7 +142,7 @@
         }
 
         & li li {
-          background: $color-secondary-blue;
+          background: $color-primary-red;
         }
 
         & > li.js-last {

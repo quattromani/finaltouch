@@ -47,7 +47,7 @@ $color-secondary-yellow: #fcef9d;
 $text: #454545;
 $text-color: $text;
 $link: $color-primary-red;
-$link-hover: $color-secondary-red;
+$link-hover: darken($color-primary-red, 15%);
 $text-grey: $color-grey;
 $text-light-grey: $color-light-grey;
 $text-link: $link;
@@ -61,7 +61,7 @@ $site-background: $color-white;
 
 // Buttons
 $color-button-primary: $color-primary-red;
-$color-button-primary-hover: $color-secondary-red;
+$color-button-primary-hover: darken($color-primary-red, 15%);
 
 
 // Forms
