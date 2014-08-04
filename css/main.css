@@ -82,6 +82,8 @@ textarea {
       letter-spacing: .09em; }
 
 footer {
+  position: relative;
+  margin-top: 2em;
   padding-top: 1em;
   padding-right: 0;
   padding-bottom: 1em;
@@ -94,6 +96,19 @@ footer {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0D000000, endColorstr=#0D000000)";
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0D000000,endColorstr=#0D000000);
     zoom: 1; }
+  footer .tag {
+    position: absolute;
+    top: -2.45em;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    background: rgba(217, 217, 217, 0.775); }
+    .ie footer .tag {
+      background: transparent;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#C6D9D9D9, endColorstr=#C6D9D9D9)";
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#C6D9D9D9,endColorstr=#C6D9D9D9);
+      zoom: 1; }
   footer .row {
     vertical-align: middle; }
   footer a {
