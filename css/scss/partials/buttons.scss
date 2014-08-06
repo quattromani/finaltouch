@@ -22,6 +22,7 @@ button,
   text-align: center;
   color: $link;
   cursor: pointer;
+  text-transform: uppercase;
 
   &:hover {
     background: darken($color-off-white, 5%);

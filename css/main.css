@@ -2362,7 +2362,8 @@ button,
   font-weight: 700;
   text-align: center;
   color: #47c3c9;
-  cursor: pointer; }
+  cursor: pointer;
+  text-transform: uppercase; }
   .btn:hover,
   .button:hover,
   button:hover,
