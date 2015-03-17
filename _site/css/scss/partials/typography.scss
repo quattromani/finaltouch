@@ -1,0 +1,249 @@
+// Pull globals for individually compiled css files
+@import '../globals/allGlobals';
+
+/* ==========================================================================
+    Typography -- Version: 1.9.0.1  - Compiled: #{timestamp()}
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('fonts/brandon_bld-webfont.eot');
+  src: url('fonts/brandon_bld-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/brandon_bld-webfont.woff') format('woff'),
+       url('fonts/brandon_bld-webfont.ttf')  format('truetype'),
+       url('fonts/brandon_bld-webfont.svg#41e76bd6e414417d52adb646f262964a') format('svg');
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: $fontawesome;
+  src: url('fonts/icons/fontawesome-webfont.eot');
+  src: url('fonts/icons/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/icons/fontawesome-webfont.svg#svgFontAwesome') format('svg'),
+       url('fonts/icons/fontawesome-webfont.woff') format("woff"),
+       url('fonts/icons/fontawesome-webfont.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.base-font {
+  font-family: $base-font;
+}
+
+.base-font-alt {
+  font-family: $base-font-alt;
+}
+
+.arial {
+  font-family: $arial;
+}
+
+.arialBold {
+  font-family: $arial-bold;
+}
+
+/* ==========================
+    Body Text
+   ========================== */
+
+.lede {
+  @include font-size($lede-text);
+
+  @include bp(bp-small) {
+    @include font-size($lede-text * .875)
+  }
+}
+
+.body-text {
+  @include font-size($body-text);
+}
+
+.small-body-text {
+  @include font-size($small-body-text);
+}
+
+.disclaimer-text {
+  @include font-size($disclaimer-text);
+}
+
+/* ==========================
+    Links
+   ========================== */
+
+a {
+  @include margin;
+  @include padding;
+  background: transparent;
+  vertical-align: baseline;
+  @include font-family($brandon);
+  font-weight: 700;
+  color: $link;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .2s;
+
+  img {
+    border: 0 none;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+/* ==========================
+    Headings
+   ========================== */
+
+// Build Headings
+$i: 1;
+@each $value in $heading-list {
+  #{nth($value, 1)},
+  .#{nth($value, 1)} {
+    font-family: nth($value, 4);
+    @include font-size(nth($value, 2));
+    font-weight: nth($value, 3);
+    text-transform: uppercase;
+    @if $i <= 3 {
+      @include bp(bp-medium) {
+        @include font-size(nth($value, 2) * .75)
+      }
+
+      @include bp(bp-small) {
+        @include font-size(nth($value, 2) * .55)
+      }
+    }
+  }
+
+  $i: $i + 1 !global;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @include inline-block;
+}
+
+small {
+  @include inline-block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote {
+  clear: inherit;
+  margin-bottom: $margin / 3;
+  vertical-align: middle;
+}
+
+p,
+.p {
+  font-family: $base-font;
+  word-wrap: break-word;
+
+  &:only-child {
+    @include margin;
+  }
+}
+
+.standout {
+  @include font-family($heading-font);
+  @include font-size(24);
+}
+
+.b {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: capitalize;
+}
+
+blockquote {
+  width: 75%;
+  @include margin(0, auto);
+  border-left: 3px solid $color-grey;
+  color: $text-grey;
+  font-style: italic;
+  padding-left: $padding;
+}
+
+q {
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+abbr {
+  border-bottom: 1px dotted $color-grey;
+  cursor: help;
+}
+
+address {
+  font-style: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: bottom;
+}
+
+mark {
+  background: #ffff00;
+}
+
+/* ==========================
+    Pre
+   ========================== */
+pre {
+  @include margin($margin, 0, 0);
+  background-color: $color-light-light-grey;
+  @include border-radius;
+  overflow: auto;
+  padding: $padding;
+  word-wrap: break-word;
+}
+
+kbd,
+samp {
+  font-family: $pre;
+  color: $color-primary-green;
+}
+
+.valid,
+.is-valid {
+  color: $color-primary-green;
+}
+
+.code-comment {
+  @include opacity(.5);
+}
+
+.fa {
+  @include font-family($fontawesome);
+}
+
+/* ==========================
+    Helpers
+   ========================== */
+
+.section {
+  border-bottom: 1px solid $color-light-grey;
+}
+
